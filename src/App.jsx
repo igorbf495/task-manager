@@ -5,15 +5,21 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 0,
-      title: "Estudar Typescript",
+      title: "Estudar programação",
       description: "nao para de estudar",
       isCompleted: false,
     },
     {
       id: 1,
-      description: "Estudar Cross Site Scripting",
+      title: "Estudar Hacking",
+      description: "Estudar Hacking",
       isCompleted: false,
-      
+    },
+    {
+      id: 3,
+      title: "Estudar Inglês",
+      description: "Estudar Inglês",
+      isCompleted: false,
     },
   ]);
 
