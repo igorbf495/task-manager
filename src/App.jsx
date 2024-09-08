@@ -1,15 +1,22 @@
+import { useState } from "react";
 import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
 
 function App() {
-  const [tasks, setTsks] = useState([
+  const [tasks, setTasks] = useState([
+    {
+      id: 0,
+      title: "Estudar Typescript",
+      description: "nao para de estudar",
+      isCompleted: false,
+    },
     {
       id: 1,
-      title: "Estudar Typescript",
-      description: "nunca parar de estudar",
-      isComplited: false,
+      description: "Estudar Cross Site Scripting",
+      isCompleted: false,
+      
     },
   ]);
+
   return (
     <>
       <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
@@ -17,6 +24,7 @@ function App() {
           <h1 className="text-3xl text-slate-100 font-bold text-center">
             Gerenciador de Tarefas
           </h1>
+          <Tasks tasks={tasks} />
         </div>
       </div>
     </>
